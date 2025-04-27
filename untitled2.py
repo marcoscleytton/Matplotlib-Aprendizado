@@ -7,7 +7,6 @@ Original file is located at
     https://colab.research.google.com/drive/1roDgeAyptX0Knl1qv3tSLNTYOQ5fJIUC
 """
 
-!pip install matplotlib
 import matplotlib.pyplot as plt
 
 x = [1,2,3,4,5]

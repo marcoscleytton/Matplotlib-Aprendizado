@@ -1,26 +1,27 @@
-# 📊 Gráficos 3D com Matplotlib
+# 📊 Comparação de Grupos: Teste A/B (Botões Azul vs Verde)
 
-Este repositório contém exemplos de gráficos tridimensionais desenvolvidos com **Python** e a biblioteca **Matplotlib**. São demonstrações focadas em visualizações 3D com personalizações visuais, ideais para quem está explorando **Ciência de Dados** e precisa comunicar insights de forma impactante.
+Este projeto tem como objetivo comparar o desempenho de dois grupos de usuários expostos a diferentes versões de um botão — **azul (Grupo A)** e **verde (Grupo B)** — com foco na taxa de conversão (cliques por visita).
 
-## 🧰 Recursos utilizados
-- Python 3
-- Matplotlib (`matplotlib.pyplot`)
-- Módulo `mpl_toolkits.mplot3d` para projeções tridimensionais
+## ⚙️ Metodologia
 
-## 🎯 O que este projeto mostra
+- Coleta de dados de visitas e cliques para os dois grupos
+- Cálculo das taxas de conversão
+- Montagem da tabela de contingência
+- Aplicação do **teste qui-quadrado** para verificar a significância estatística
 
-- 📦 Gráfico de barras 3D básico
-- 🎨 Customização de cores por categoria
-- ⚙️ Remoção das faces do fundo (painéis) do gráfico
-- 🧼 Ajuste de malha (grid) e plano de fundo
-- 🌀 Controle de rotação com `view_init` para melhor ângulo de visualização
-- 🔄 Rotação de rótulos do eixo X para melhor leitura
+## 🧮 Ferramentas Utilizadas
 
-## 📸 Visual de exemplo
+- **Python**
+- **NumPy** para manipulação de dados
+- **SciPy** para análise estatística (`chi2_contingency`)
 
-> 🔧 Imagem não incluída, mas você pode gerar facilmente executando os scripts com o comando `python nome_do_arquivo.py`.
+## 📈 Resultados
 
-## 🚀 Como usar
-1. Instale os pacotes necessários:
-   ```bash
-   pip install matplotlib
+- **Taxa de conversão Grupo A** (botão azul): **12%**
+- **Taxa de conversão Grupo B** (botão verde): **16%**
+- **Valor-p** obtido: **0.01196**
+
+✅ Como o valor-p é menor que **0.05**, podemos concluir que **a diferença entre os grupos é estatisticamente significativa**.
+
+> **Conclusão**: O botão verde apresenta melhor desempenho e pode ser adotado com maior confiança.
+
